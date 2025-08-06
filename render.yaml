@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: geoserver
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    ports:
+      - 8080
